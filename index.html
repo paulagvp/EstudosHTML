@@ -30,14 +30,88 @@
             <figcaption>Gramado</figcaption>  
         </figure>
     </section>
-    <video controls width="500px">
+    <video controls width="200px">
         <source src="video/VID_20220329_111810.mp4" type="video/mp4">
         Seu navegador não suporta o formato do vídeo. <a href="video/VID_20220329_111810.mp4">Clique aqui para baixar</a>
     </video>
+    <section>
+        <h2>Orçamento</h2>
+        <form method="GET" action="">
+            <label>Nome</label><br>
+            <input type="text" name="Nome"><br>
+            
+            <label>Email</label><br>
+            <input type="email" required name="Email"><br>
+
+            <label>Data de ida</label><br>
+            <input type="date" name="dataIda"><br>
+
+            <label>Data de volta</label><br>
+            <input type="date" name="dataVolta"><br>
+            
+            <label>Quantidade de pessoas</label><br>
+            <input type="number" name="QuantidadePessoas"><br>
+
+            <label>Senha</label><br>
+            <input type="password" name="Senha"><br>
+
+            <label>Comentário</label><br>
+            <textarea rows="5" name="Comentário"></textarea><br><br>
+            
+            <button>Salvar</button>
+        </form>
+    </section>
+
+    <br><br>
+    <section>
+        <h2>Taxas e serviços</h2>
+        <p>Veja nossas taxas para serviços:</p>
+        <table border>
+            <caption>Descrição dos serviços e seus respectivos valores</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Serviço
+                    </th>
+                    <th>
+                        Valor
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Reserva de hotel
+                    </td>
+                    <td>
+                        R$ 150,00
+                    </td>
+                <tr>
+                    <td>
+                        Compra de passagem
+                    </td>
+                    <td>
+                        R$ 100,00
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        Aluguel de carro
+                    </td>
+                    <td>
+                        R$ 200,00
+                    </td> 
+                </tr>
+            </tbody>
+            <tfoot>
+                <td >Serviço</td>
+                <td>Valor</td>
+            </tfoot>
+        </table>
+    </section>
     <footer>
        <p>Desenvolvido por Paula Florido
 </p> 
     </footer>
-
 </body>
 </html>
