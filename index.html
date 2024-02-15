@@ -37,24 +37,58 @@
     <section>
         <h2>Orçamento</h2>
         <form method="GET" action="">
-            <label>Nome</label><br>
-            <input type="text" name="Nome"><br>
+            <fieldset>
+                <legend>Dados da viagem</legend>
+                <label>Nome</label><br>
+                <input type="text" name="Nome"><br>
+                
+                <label>Email</label><br>
+                <input type="email" required name="Email"><br>
+
+                <label>Data de ida</label><br>
+                <input type="date" name="dataIda"><br>
+
+                <label>Data de volta</label><br>
+                <input type="date" name="dataVolta"><br>
+                
+                <label>Quantidade de pessoas</label><br>
+                <input type="number" name="QuantidadePessoas"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Quais serviços deseja contratar?</legend>
+                <label>
+                    <input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+                </label>
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="hospedagem">Reserva de hospedagem
+                </label>
+                <label>
+                    <br><input type="checkbox" name="veiculos" value="veiculos">Reserva de veículos<br><br>
+                </label>
             
-            <label>Email</label><br>
-            <input type="email" required name="Email"><br>
-
-            <label>Data de ida</label><br>
-            <input type="date" name="dataIda"><br>
-
-            <label>Data de volta</label><br>
-            <input type="date" name="dataVolta"><br>
-            
-            <label>Quantidade de pessoas</label><br>
-            <input type="number" name="QuantidadePessoas"><br>
-
-            <label>Senha</label><br>
-            <input type="password" name="Senha"><br>
-
+            </fieldset>
+            <fieldset>
+                <legend>Forma de pagamento:</legend>
+                <label>
+                    <input type="radio" name="Forma de pagamento" value="Cartão de Crédito">Cartão de crédito
+                </label>
+                <label>
+                    <input type="radio" name="Forma de pagamento" value="Pix">Pix
+                </label>
+                <label>
+                    <input type="radio" name="Forma de pagamento" value="Boleto">Boleto
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Escolha o prazo para pagamento:</legend>
+                <select name="prazoPagamento">
+                    <option value="a vista" selected>à vista</option>
+                    <option value="5x sem juros">5x sem juros</option>
+                    <option value="10x com juros">10x com juros</option>
+                </select>
+            </fieldset>
+            <br><br>
+        
             <label>Comentário</label><br>
             <textarea rows="5" name="Comentário"></textarea><br><br>
             
